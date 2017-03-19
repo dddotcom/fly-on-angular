@@ -24,6 +24,8 @@ router.route('/:id')
     });
   })
   .put(function(req, res) {
+    console.log(req.params.id);
+    console.log(req.body);
     Airplane.findByIdAndUpdate(req.params.id, req.body, function(err) {
       if (err) return res.status(500).send(err);
       return res.send({ message: 'success' });
