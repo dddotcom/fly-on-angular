@@ -44,6 +44,8 @@ angular.module("FlyApp")
     name: '',
     description: '',
     age: '',
+    appearance: '',
+    personality: '',
     picture: ''
   };
 $scope.addPlane = function(){

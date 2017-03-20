@@ -4,9 +4,18 @@
 </div>
 <h3>Did you know? This plane is {{ plane.age | fixgrammar}} years old</h3>
 
+<h4>Description</h4>
+<hr>
 <p>{{plane.description}}</p>
-
-
+<br>
+<h4>Appearance</h4>
+<hr>
+<p>{{plane.appearance}}</p>
+<br>
+<h4>Personality</h4>
+<hr>
+<p>{{plane.personality}}</p>
+<br>
 
 <a class="btn btn-danger" ng-click="deletePlane()">Delete</a>
 <a ng-href="/plane/edit/{{plane._id}}" class="btn btn-success" >Edit</a>
