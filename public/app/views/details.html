@@ -1,9 +1,12 @@
-<h2>Details about the {{ plane.manufacturer}} {{plane.model}}</h2>
+<h2>Details about {{ plane.name}} </h2>
 <div>
-  <img src="{{plane.picture}}" alt="This is a picture of a {{plane.manufacturer}} {{plane.model}}">
+  <img src="{{plane.picture}}" alt="This is a picture of a {{plane.name}}">
 </div>
+<h3>Did you know? This plane is {{ plane.age | fixgrammar}} years old</h3>
 
-<h3>Did you know? This plane has {{ plane.engines | fixgrammar}}</h3>
+<p>{{plane.description}}</p>
+
+
 
 <a class="btn btn-danger" ng-click="deletePlane()">Delete</a>
 <a ng-href="/plane/edit/{{plane._id}}" class="btn btn-success" >Edit</a>

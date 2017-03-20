@@ -1,6 +1,6 @@
 angular.module("FlyApp")
 .controller("PlanesCtrl", ["$scope", "PlanesAPI", function($scope, planesAPI){
-  $scope.title = "Look at all my planes!";
+  $scope.title = "Look at all the Kill la Kill characters!";
   $scope.planes = [];
   $scope.searchTerm = '';
 
@@ -41,9 +41,9 @@ angular.module("FlyApp")
 }])
 .controller("NewCtrl", ["$scope", "$location", "PlanesAPI", function($scope, $location, planesAPI){
   $scope.plane = {
-    manufacturer: '',
-    model: '',
-    engines: '',
+    name: '',
+    description: '',
+    age: '',
     picture: ''
   };
 $scope.addPlane = function(){

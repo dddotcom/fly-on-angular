@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 
 var AirplaneSchema = new mongoose.Schema({
-  manufacturer: String,
-  model: String,
-  engines: Number,
+  name: String,
+  description: String,
+  age: Number,
   picture: String
 });
 

@@ -1,7 +1,7 @@
 <h2>{{ title }}</h2>
-<p ng-show="planes"><i>I have {{ planes.length}} planes! B4113r 5t4tu5</i></p>
+<p ng-show="planes"><i>I have {{ planes.length}} characters! B4113r 5t4tu5</i></p>
 
-<p ng-hide="planes">LOADING PLANES NOW...</p>
+<p ng-hide="planes">LOADING KILL LA KILL NOW...</p>
 
 <div class="input-group">
   <input type="text" class="form-control" ng-model="searchTerm" placeholder="Search for...">
@@ -11,6 +11,6 @@
 </div>
 
 <div ng-repeat="p in planes | filter:searchTerm">
-  <h3><strong>{{ p.manufacturer }}</strong> {{ p.model }}</h3>
+  <h3><strong>{{ p.name }}</strong>, {{ p.age }}</h3>
   <a ng-href="/plane/{{ p._id }}" class="btn btn-primary">Details</a>
 </div>
