@@ -1,4 +1,4 @@
-#C ombining Angular and Express
+# Combining Angular and Express
 
 Using the Airplanes API starter, create an Angular CRUD app that does the following.
 
